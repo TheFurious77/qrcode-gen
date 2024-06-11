@@ -1,46 +1,113 @@
 @import url('http://fonts.cdnfonts.com/css/lilly'); 
-.App{ 
-display: flex; 
-flex-direction: column; 
-justify-content: center; 
-align-items: center; 
-gap: 50px; 
-padding-top: 30px; 
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.App { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 50px; 
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
 } 
-h1{ 
-font-family: 'Lilly', sans-serif; 
-font-size: 50px; 
+
+h1 { 
+  font-family: 'Lilly', sans-serif; 
+  font-size: 2.5em; 
+  color: #4CAF50;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 } 
-.gen input{ 
-height: 35px; 
-width: 250px; 
-font-size: 20px; 
-padding-left: 5px; 
+
+.gen input { 
+  height: 35px; 
+  width: 250px; 
+  font-size: 18px; 
+  padding: 5px 10px; 
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
 } 
-button{ 
-position: relative; 
-height: 38px; 
-width: 100px; 
-top: -2px; 
-font-size: 18px; 
-border: none; 
-color: whitesmoke; 
-background-color: forestgreen; 
-box-shadow: 2px 2px 5px rgb(74, 182, 74); 
-cursor: pointer; 
+
+button { 
+  height: 40px; 
+  width: 110px; 
+  font-size: 18px; 
+  border: none; 
+  color: #ffffff; 
+  background-color: #4CAF50; 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 } 
-button:active{ 
-box-shadow: none; 
+
+button:hover { 
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 } 
-.extra{ 
-padding-top: 20px; 
-display: flex; 
-justify-content: space-around; 
-gap: 10px; 
+
+button:active { 
+  background-color: #3e8e41; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 } 
-.output-box{ 
-display: flex; 
-flex-direction: column; 
-align-items: center; 
-gap: 40px; 
+
+.extra { 
+  padding-top: 20px; 
+  display: flex; 
+  justify-content: space-around; 
+  gap: 20px; 
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+.extra h5 { 
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+} 
+
+.extra input[type="color"] { 
+  width: 40px; 
+  height: 40px; 
+  border: none;
+  cursor: pointer;
+} 
+
+.extra input[type="range"] { 
+  width: 150px; 
+}
+
+.output-box { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
+} 
+
+.output-box img { 
+  max-width: 100%;
+  border: 5px solid #f1f1f1; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output-box a button { 
+  background-color: #007BFF; 
+}
+
+.output-box a button:hover { 
+  background-color: #0056b3;
 }
