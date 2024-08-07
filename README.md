@@ -21,3 +21,4 @@ This application converts text into QR codes. Enter any text, and the applicatio
    ```sh
    git clone https://github.com/TheFurious77/qrcode-gen.git
 
+![Screenshot (1580)](https://github.com/user-attachments/assets/f42c5bf5-72a1-4408-92ee-301f0037f37b)
